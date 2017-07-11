@@ -1,13 +1,94 @@
 body
 {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
+
+
+/* Hamburger Menü anfang*/
+nav,
+.navbar-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  color: white;
+}
+
+.nav-hide { display: none; }
+
+nav ul {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0 !important;
+}
+
+nav ul li { list-style: none; }
+
+nav ul li a {
+  font-size: 60pt;
+  font-family: "Arial Black", Arial;
+  font-weight: 900;
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-on .bar1,
+.navbar-on .bar2,
+.navbar-on .bar3 { background-color: white; }
+
+.navbar-on .bar1 {
+  transform-origin: 10% 40%;
+  transform: rotate(45deg);
+}
+
+.navbar-on .bar3 {
+  transform-origin: 10% 40%;
+  transform: rotate(-45deg);
+}
+
+.navbar-on .bar2 { background-color: transparent; }
+/* Hamburger Menü ende */
+
+/* Maus Parallax anfang */
 #bg {
 background: url(../image/bg.jpg) no-repeat top center;
 background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-height: 600px;
+height: auto;
 }
 
 
@@ -36,5 +117,13 @@ height: 600px;
 
 #mainshadow {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 50px;
+}
+/* Maus Parallax ende */
+
+h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Arial Black", Arial;
+  font-weight: 900;
 }

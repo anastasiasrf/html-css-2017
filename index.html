@@ -1,28 +1,48 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <titel>Anastasia Scherf</titel>
+  <title>Anastasia Scherf</title>
   <link href="css/1140.css" rel="stylesheet" type="text/css" />
   <link href="css/stylesheeet.css" rel="stylesheet" type="text/css" />
+
+
+
 </head>
 
 <body>
+<!-- Navigation anfang -->
+  <div class='navbar-toggle' title='Menu'>
+      <div class='bar1'></div>
+      <div class='bar2'></div>
+      <div class='bar3'></div>
+  </div>
+
+<nav class="nav-hide">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="works.html">Works</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<!-- Navigation ende -->
 
 
+<!-- Maus Parallax anfang -->
   <div id="bg">
     <div class="container12">
       <ul id="scene">
         <li class="layer" id="mainshadow" data-depth="0.60"><img src="image/main_shadow.png"></li>
         <li class="layer" id="linesw" data-depth="0.40"><img src="image/lines_foreground.png"></li>
         <li class="layer" id="meinname" data-depth="0.20"><img src="image/anastasia_foreground.png"></li>
-
-                <!--<li class="layer" id="meinname" data-depth="0.00"><p>Anastasia Scherf</p></li>-->
+        <!--<li class="layer" id="meinname" data-depth="0.00"><p>Anastasia Scherf</p></li>-->
       </ul>
     </div>
   </div>
-
+<!-- Maus Parallax ende -->
 </body>
 
+<!-- Scripte Maus Parallax anfang -->
 <script src="scripts/jquery-1.10.2.min.js"></script>
 <script src="scripts/jquery.parallax.min.js"></script>
 
@@ -31,4 +51,6 @@
 		$('#scene').parallax();
 	});
 </script>
+<!-- Scripte Maus Parallax ende -->
+
 </html>
