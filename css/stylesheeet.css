@@ -162,13 +162,16 @@ width: 100%;
 
 
 .cd-slider {
+        cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden; }
   .cd-slider::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'mobile';
-    display: none; }
+    display: none;
+
+  }
   .cd-slider li {
     position: absolute;
     top: 0;
@@ -397,3 +400,6 @@ width: 100%;
     line-height: 1.6;
     margin: 1.5em 0;
   }
+
+
+/*------------------------------------------------------*/
