@@ -5,11 +5,33 @@
   <link href="css/1140.css" rel="stylesheet" type="text/css" />
   <link href="css/stylesheeet.css" rel="stylesheet" type="text/css" />
 
+  <script>
+      $(document).ready(function(){
+         $("#link_works").click(function(){
+              $path=$("#works").offset().top;
+              $('body').animate({scrollTop:$path},1000);
+         });
+         $("#link_works").click(function(){
+              $path=$("#works").offset().top;
+              $('body').animate({scrollTop:$path},1000);
+         });
+         $("#link3").click(function(){
+              $path=$("#box3").offset().top;
+              $('body').animate({scrollTop:$path},1000);
+         });
+         $("#link4").click(function(){
+              $path=$("#box4").offset().top;
+              $('body').animate({scrollTop:$path},1000);
+         });
+      });
+  </script>
+
 
 
 </head>
 
 <body>
+
 <!-- Navigation anfang -->
   <div class='navbar-toggle' title='Menu'>
       <div class='bar1'></div>
@@ -20,7 +42,7 @@
 <nav class="nav-hide">
 <ul>
   <li><a href="#bg">Home</a></li>
-  <li><a href="#works">Works</a></li>
+  <li><a href="#works" id="link_works">Works</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
@@ -43,28 +65,19 @@
 
 <!-- smooth scrolling one page nav anfang -->
 
-<div id="works"</div>
+<div id="works">
 
-  <section class="cd-single-item">
-  	<div class="cd-slider-wrapper">
-  		<ul class="cd-slider">
-  			<li class="selected"><img src="image/tul_1.jpg" alt="Product Image 1"></li>
-  			<li><img src="image/tul_2.jpg" alt="Product Image 1"></li>
-  			<li><img src="image/tul_3.jpg" alt="Product Image 2"></li>
-  		</ul> <!-- cd-slider -->
 
-  		<ul class="cd-slider-navigation">
-  			<li><a href="#0" class="cd-prev inactive">Next</a></li>
-  			<li><a href="#0" class="cd-next">Prev</a></li>
-  		</ul> <!-- cd-slider-navigation -->
 
-  		<a href="#0" class="cd-close">Close</a>
-  	</div> <!-- cd-slider-wrapper -->
 
-  	<div class="cd-item-info">
-  		<h1>The Unlucky Librarian</h1>
-      <h2>Blues der Buttercremetorte</h2>
-  		<p>Das Buch mit dem Titel „The unlucky Librarian“
+
+  <div class="wrap">
+  <div class="tile">
+    <img src="image/tul_1.jpg"/>
+    <div class="animate-text">
+    <h1>The Unlucky Librarian</h1>
+    <h2 class="animate-text">Blues der Buttercremetorte</h2>
+    <p class="animate-text">Das Buch mit dem Titel „The unlucky Librarian“
 ist eine Kooperation zwischen einer befreundeten
 Autorin und mir. Ich gestaltete und Layoutete die
 Geschichte zu einem Illustrativen und Interaktiven
@@ -75,10 +88,80 @@ Belletristik aus dem Genre der Satire. Folglich nach
 dem Inhalt, ist mein Grundkonzept für die Gestaltung
 „Tradition und ein Hauch von Anarchie“. Mein
 Gestalterisches Projekt wurde zum „Lette Design
-Award 2015“ Nominiert.
-Grafik</p>
-  	</div> <!-- cd-item-info -->
-  </section> <!-- cd-single-item -->
+Award 2015“ Nominiert.</p>
+   </div>
+   </div>
+
+
+  <div class="tile">
+    <img src='image/versace.jpg'/>
+    <div class="animate-text">
+    <h1>Lorem ipsum.</h1>
+    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+  </div>
+   </div>
+
+    <div class="tile">
+    <img src='image/lokalizer.jpg'/>
+    <div class="animate-text">
+    <h1>Lorem ipsum.</h1>
+    <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+    <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+  </div>
+   </div>
+  </div>
+
+  <!--- zweite reihe ---->
+
+  <div class="wrap_2">
+  <div class="tile">
+    <img src="image/money.jpg"/>
+    <div class="animate-text">
+    <h1></h1>
+    <h2 class="animate-text"></h2>
+    <p class="animate-text"></p>
+   </div>
+   </div>
+
+
+  <div class="tile">
+    <img src='image/sailormoon.jpg'/>
+    <div class="animate-text">
+    <h1></h1>
+    <h2 class="animate-text"></h2>
+    <p class="animate-text"></p>
+  </div>
+   </div>
+
+    <div class="tile">
+    <img src='image/pudel.jpg'/>
+    <div class="animate-text">
+    <h1></h1>
+    <h2 class="animate-text"></h2>
+    <p class="animate-text"></p>
+  </div>
+   </div>
+  </div>
+
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
@@ -88,12 +171,17 @@ Grafik</p>
 <div id="contact">Block 4</div>
 <!-- smooth scrolling one page nav ende -->
 
-<script src="scripts/jquery-2.1.1.js"></script>
-<script src="scripts/jquery.mobile.min.js"></script>
-<script src="scripts/main.js"></script>
+
+
 </body>
 
+<script>
+	var elem = document.querySelector('.m-p-g');
 
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
 
 <!-- Scripte Maus Parallax anfang -->
 <script src="scripts/jquery-1.10.2.min.js"></script>
@@ -105,5 +193,6 @@ Grafik</p>
 	});
 </script>
 <!-- Scripte Maus Parallax ende -->
+
 
 </html>
