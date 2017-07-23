@@ -96,8 +96,10 @@ nav ul li a {
 
 /* Maus Parallax anfang */
 #bg {
-background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+
   background-image: linear-gradient(180deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
 height: 100vh;
 width: 100%;
 }
@@ -108,7 +110,17 @@ width: 100%;
   margin-top: 0px;
 }
 
-#linesw {
+#makestuff {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#striche {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#kreise {
   text-align: center;
   margin-top: 0px;
 }
@@ -133,8 +145,15 @@ width: 100%;
   width: 100%;
   text-align: center;
   padding: 0px;
-background-image: linear-gradient(to top, #df89b5 100%, #bfd9fe 0%);
   background-image: linear-gradient(0deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+}
+
+@media (max-width: 1000px) {
+  #works {
+   height: 3900px;
+  }
 }
 /*smooth scrolling one page nav ende*/
 
@@ -173,7 +192,7 @@ background-image: linear-gradient(to top, #df89b5 100%, #bfd9fe 0%);
 
 }
 
-.tile 
+.tile
 {
   width:380px;
   height:380px;
@@ -242,7 +261,7 @@ background-image: linear-gradient(to top, #df89b5 100%, #bfd9fe 0%);
 
 
 @media (max-width: 1000px) {
-  .wrap {
+  .wrap, .wrap_2, .wrap_3 {
    flex-direction: column;
     width:400px;
   }
@@ -299,6 +318,7 @@ article {
   height: 100vh;
 }
 
+
 /*Sociale Medien*/
 
 .social-icon {
@@ -351,7 +371,7 @@ ul.social-icons {
 }
 
 .copyright {
-  color: #f9f9f9;
+  color: #3e3e3e;
   text-align: right;
   margin-right: 20px;
   position: relative;
