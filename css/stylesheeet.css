@@ -32,6 +32,7 @@ nav {
   z-index: 10;
   background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  background-image: linear-gradient(0deg, #f6f6d7 0%, #e9defa 100%);
   width: 100%;
   height: 100%;
   text-align: center;
@@ -98,9 +99,11 @@ nav ul li a {
 /* Maus Parallax anfang */
 #bg {
 
-  background-image: linear-gradient(180deg, #e9defa 0%, #fbfcdb 100%);
+  /*background-image: linear-gradient(180deg, #e9defa 0%, #fbfcdb 100%);
   background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
+ background-blend-mode: screen;*/
+   background-image: linear-gradient(90deg, #EADFDF 0%, #FFE6FA 100%);
+     background-image: linear-gradient(90deg, #EADFDF 100%, #ebedee 0%);
 height: 100vh;
 width: 100%;
 }
@@ -146,9 +149,11 @@ width: 100%;
   width: 100%;
   text-align: center;
   padding: 0px;
-  background-image: linear-gradient(0deg, #e9defa 0%, #fbfcdb 100%);
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
+  /*background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;*/
+  background-image: linear-gradient(90deg, #EADFDF 0%, #FFE6FA 100%);
+  background-image: linear-gradient(90deg, #EADFDF 100%, #ebedee 0%);
+
 }
 
 @media (max-width: 1000px) {
@@ -313,12 +318,19 @@ article {
 }
 
 .right-half {
-  background-image: linear-gradient(0deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: linear-gradient(0deg, #e9defa 0%, #f6f6d7 100%);
   float: left;
   width: 50%;
   height: 100vh;
 }
 
+
+@media (max-width: 1000px) {
+  .left-half, .right-half {
+   flex-direction: column;
+   width: 100%;
+  }
+}
 
 /*Sociale Medien*/
 
