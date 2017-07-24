@@ -425,10 +425,7 @@ footer {
 
 @media (max-width: 1000px) {
   footer, .left-half_footer, .right-half_footer, .copyright {
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 0;
+    display: none;
   }
 }
 
